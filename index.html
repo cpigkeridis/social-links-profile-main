@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Social links profile</title>
+
+  <style>
+    @media (max-width: 375px) {
+  /* Mobile*/
+
+  .attribution {
+        position: fixed; /* Fixed position to stay at the bottom */
+        bottom: 0; /* Align at the bottom */
+        left: 0; /* Align to the left */
+        background-color: hsl(0, 0%, 8%);
+        color: white; /* Text color */
+      }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(0, 0%, 8%);
+  }
+
+  h1,h2,h3 {
+    font-weight: 700; /* Bold weight for headings */ 
+  }
+
+  p,li {
+    font-weight: 400; /* Normal weight for text */
+        
+  }
+  
+  .main-container {
+    max-width: 90%; /* Adjust the maximum width for smaller screens */
+    width: 70%;
+    padding: 10px; /* Reduce padding for smaller screens */
+    text-align: center;
+    background-color: hsl(0, 0%, 12%);
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .round-image {
+    width: 50%; /* Adjust image width for smaller screens */
+    border-radius: 50%;
+  }
+
+  .name {
+    font-size: 16px; /* Decrease font size for smaller screens */
+    color: hsl(0, 0%, 100%);
+  }
+
+  .location{
+    margin-top: -10px;
+    color:  hsl(75, 94%, 57%);
+    font-size: 12px;
+  }
+
+  .description{
+    color: hsl(0, 0%, 100%);
+    font-size: 12px;
+  }
+  ul{
+        list-style-type: none; /*removed bullets */
+        padding: 0; /*  remove padding, bc we removed bullet points */
+        margin: 0;
+      }
+
+  li {
+    margin-bottom: 10px; /* Decrease margin between list items for smaller screens */
+    padding: 8px; /* Decrease padding inside the list items for smaller screens */
+    background-color: rgb(79, 78, 78);
+    border: 1px solid hsl(0, 0%, 20%); /* Add a 1px solid border with a light gray color */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+  }
+
+  li a {
+    font-size: 14px;
+        text-decoration: none; /* Remove underline from links */
+        color: hsl(0, 0%, 100%); /* Set link color */
+        font-weight: 500;
+      }
+}
+
+
+
+    @media (min-width: 1440px) {
+      /*desktop*/
+
+    .attribution {
+        position: fixed; /* Fixed position to stay at the bottom */
+        bottom: 0; /* Align at the bottom */
+        left: 0; /* Align to the left */
+        background-color: hsl(0, 0%, 8%);
+        color: white; /* Text color */
+      }
+
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: hsl(0, 0%, 8%);
+      }
+
+      
+      
+      h1,h2,h3 {
+        font-weight: 700; /* Bold weight for headings */
+        
+      }
+
+      
+      p,li {
+        font-weight: 400; /* Normal weight for text */
+        
+      }
+
+      .main-container {
+        text-align: center;
+        background-color: hsl(0, 0%, 12%);
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .round-image {
+        border-radius: 50%;
+        width: 30%;
+      }
+
+      .name{
+        color: hsl(0, 0%, 100%);
+        font-size: 18px;
+      }
+
+      .location{
+        margin-top: -10px;
+       color:  hsl(75, 94%, 57%);
+       font-size: 13px;
+      }
+
+      .description{
+        color: hsl(0, 0%, 100%);
+        font-size: 14px;
+      }
+
+      ul{
+        list-style-type: none; /*removed bullets */
+        padding: 0; /*  remove padding, bc we removed bullet points */
+        margin: 0;
+      }
+
+      li {
+        background-color: rgb(79, 78, 78);
+        border: 1px solid hsl(0, 0%, 20%); /* Add a 1px solid border with a light gray color */
+        border-radius: 10px; /* Add border-radius for rounded corners */
+        margin-bottom: 15px; /* Add margin between list items */
+        padding: 10px; /* Add padding inside the list items */
+      }
+
+      li a {
+        text-decoration: none; /* Remove underline from links */
+        color: hsl(0, 0%, 100%); /* Set link color */
+        font-weight: 500;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="main-container">
+    <img src="assets/images/avatar-jessica.jpeg" alt="Omelette" class="round-image">
+    <div class="name">
+      <h3>Jessica Randall</h3>
+    </div>
+    <div class="location">
+      <h4>London, United Kingdom</h4>
+    </div>
+    <div class="description">
+      <p>"Front-end developer and avid reader."</p>
+    </div>
+    <div class="socials">
+      <nav aria-label="Social media links">
+        <ul>
+          <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://www.frontendmentor.io/" target="_blank" rel="noopener noreferrer">Frontend Mentor</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        </ul>
+      </nav>      
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
